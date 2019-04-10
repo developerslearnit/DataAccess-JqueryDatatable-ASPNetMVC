@@ -67,3 +67,7 @@ C:\dev\WebTuts\ASPNetJQueryDatatable\ASPNetJQueryDatatable\obj\Debug\ASPNetJQuer
 C:\dev\WebTuts\ASPNetJQueryDatatable\ASPNetJQueryDatatable\obj\Debug\ASPNetJQueryDatatable.csproj.CopyComplete
 C:\dev\WebTuts\ASPNetJQueryDatatable\ASPNetJQueryDatatable\obj\Debug\ASPNetJQueryDatatable.dll
 C:\dev\WebTuts\ASPNetJQueryDatatable\ASPNetJQueryDatatable\obj\Debug\ASPNetJQueryDatatable.pdb
+C:\dev\WebTuts\ASPNetJQueryDatatable\ASPNetJQueryDatatable\bin\EntityFramework.dll
+C:\dev\WebTuts\ASPNetJQueryDatatable\ASPNetJQueryDatatable\bin\EntityFramework.SqlServer.dll
+C:\dev\WebTuts\ASPNetJQueryDatatable\ASPNetJQueryDatatable\bin\EntityFramework.xml
+C:\dev\WebTuts\ASPNetJQueryDatatable\ASPNetJQueryDatatable\bin\EntityFramework.SqlServer.xml

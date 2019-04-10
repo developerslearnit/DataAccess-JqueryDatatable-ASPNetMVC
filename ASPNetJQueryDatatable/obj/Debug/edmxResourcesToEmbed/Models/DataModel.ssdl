@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JqueryDatatableModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AGENTS">
+    <Key>
+      <PropertyRef Name="AGENT_CODE" />
+    </Key>
+    <Property Name="AGENT_CODE" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="AGENT_NAME" Type="char" MaxLength="40" />
+    <Property Name="WORKING_AREA" Type="char" MaxLength="35" />
+    <Property Name="COMMISSION" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PHONE_NO" Type="char" MaxLength="15" />
+    <Property Name="COUNTRY" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="CUSTOMER">
+    <Key>
+      <PropertyRef Name="CUST_CODE" />
+    </Key>
+    <Property Name="CUST_CODE" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="CUST_NAME" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="CUST_CITY" Type="char" MaxLength="35" />
+    <Property Name="WORKING_AREA" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="CUST_COUNTRY" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="GRADE" Type="int" Nullable="false" />
+    <Property Name="OPENING_AMT" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="RECEIVE_AMT" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="PAYMENT_AMT" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="OUTSTANDING_AMT" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="PHONE_NO" Type="varchar" MaxLength="17" Nullable="false" />
+    <Property Name="AGENT_CODE" Type="char" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ORDERS">
+    <Key>
+      <PropertyRef Name="ORD_NUM" />
+    </Key>
+    <Property Name="ORD_NUM" Type="int" Nullable="false" />
+    <Property Name="ORD_AMOUNT" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ADVANCE_AMOUNT" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ORD_DATE" Type="date" Nullable="false" />
+    <Property Name="CUST_CODE" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="AGENT_CODE" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="ORD_DESCRIPTION" Type="varchar" MaxLength="60" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="JqueryDatatableModelStoreContainer">
+    <EntitySet Name="AGENTS" EntityType="Self.AGENTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CUSTOMER" EntityType="Self.CUSTOMER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ORDERS" EntityType="Self.ORDERS" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
